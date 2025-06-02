@@ -1,0 +1,57 @@
+@import url(header.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  /* font-family: "Libre Baskerville", serif; */
+}
+
+body{
+  background-color: #131C21;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+:root {
+  --bodyColor: #0D0D0D;
+  --textColor: #F9F9FB;
+  --textColor40: #6D7376;;
+  --textColor70: #f9f9fbb4;
+  --h4Color: #CCCCCC;
+  --retangulo: #202020;
+
+
+  --libre-baskerville: 'Libre Baskerville', sans-serif;
+  --league-spartan: "League Spartan", sans-serif;
+
+  --h1: 400 54px var(--league-spartan);
+  --h2: 400 40px var(--league-spartan);
+  --h3: 200 34px var(--league-spartan);
+  --h4: 400 17px var(--league-spartan);
+  --h5: 200 14px var(--league-spartan);
+  --paragrafo1: 400 14px/30px var(--libre-baskerville);
+  --paragrafo1Bold: 700 14px/30px var(--libre-baskerville);
+  --paragrafoContainer: 400 12px/20px var(--libre-baskerville);
+  --button: 300 20px var(--league-spartan);
+  --placeholder: 400 12px var(--libre-baskerville);
+  --btnEnviar: 600 24px/30px var(--league-spartan);
+}
