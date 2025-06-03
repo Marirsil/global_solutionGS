@@ -15,16 +15,16 @@ h5 { font: var(--h5); }
 p,ul {font: var(--paragrafo1);}
 
 body{
-  background-color: #131C21;
+  background-color: var(--backgroundColor);
 }
 
 :root {
-  --textBackground: #2b3439b3;
-  --textColor: #F9F9FB;
+  --backgroundColor: #131C21;
+  --sectionColor: #10191E;
   --textColor40: #6D7376;;
   --textColor70: #f9f9fbb4;
-  --h4Color: #CCCCCC;
-  --retangulo: #202020;
+  --detalhes: #2B3439;
+  --txtPaginaInicial: #2b3439b3;
 
 
   --libre-baskerville: 'Libre Baskerville', sans-serif;
@@ -43,4 +43,5 @@ body{
   --btnEnviar: 600 24px/30px var(--league-spartan);
   --header : 300 17px var(--league-spartan);
   --divText: 300 15px var(--league-spartan);
+  --quizQuestion: 300 30px var(--league-spartan);
 }

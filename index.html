@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/slider.css">
   <link rel="stylesheet" href="./assets/styles/global.css">
   <title>Document</title>
 </head>
@@ -15,24 +16,54 @@
     <img src="" alt="Logo da empresa">
     <nav class="navBar">
       <ul>
-        <li><a href="">O problema</a></li>
-        <li><a href="">Alertas</a></li>
-        <li><a href="">Objetivos</a></li>
-        <li><a href="">Tecnologias</a></li>
-        <li><a href="">Benefícios</a></li>
-        <li><a href="">Entre em contato</a></li>
-        <li><a href="./quiz/quiz.html">Quiz</a></li>
+        <li><a href="#problema">O problema</a></li>
+        <li><a href="#alertas">Alertas</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#tecnologiasUtilizadas">Tecnologias</a></li>
+        <li><a href="#beneficiosAplicacoesPublicoAlvo">Benefícios</a></li>
+        <li><a href="#anexo">Quiz</a></li>
+        <li><a href="#footer">Entre em contato</a></li>
       </ul>
     </nav>
     <button><img src="./assets/images/lua-crescente.png" alt="Icone de modo noturno"></button>
   </header>
   <main>
     <section id="paginaInicial">
-      
+      <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="./assets/images/enchente5.jpeg" alt="Dois homens tentando sair de uma enchente">
+            </div>
+            <div class="item">
+              <img src="./assets/images/enchente3.jpeg" alt="Dois cachorros isolados em uma enchente">
+            </div>
+            <div class="item">
+                <img src="./assets/images/enchente7.jpeg" alt="bombeiro tentando salvar uma pessoas de uma enchente em um  barco">
+            </div>
+            <div class="item">
+                <img src="./assets/images/enchente8.webp" alt="Homem tentando se recuperar da lama pós enchente">
+            </div>
+            <div class="item">
+                <img src="./assets/images/enchente6.webp" alt="Dois home carregando um barco em uma enchente">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="degrade"></div>
+      </div>
 
       <div class="textosPaginaInicial">
         <h1>A água que salva também pode destruir.</h1>
-        <p>Conscientizar é a primeira defesa</p>
+        <p>Conscientizar é a primeira defesa.</p>
       </div>
     </section>
 
@@ -96,10 +127,10 @@
 
     <section id="oqueFazer">
       <div class="imgsOqueFazer">
-        <img class="img1" src="./assets/images/temponublado.png" alt="">
-        <img class="img2" src="./assets/images/neblina.png" alt="">
-        <img class="img3" src="./assets/images/previsao.png" alt="">
-        <img class="img4" src="./assets/images/limpandocalha.png" alt="">
+        <img class="img1" src="./assets/images/temponublado.png" alt="Tempo nublado, cheio de nuvens cinzas">
+        <img class="img2" src="./assets/images/neblina.png" alt="Local cheio de neblina, com pouca visibilidade">
+        <img class="img3" src="./assets/images/previsao.png" alt="previsao do tempo na televisao com chuva">
+        <img class="img4" src="./assets/images/limpandocalha.png" alt="limpando calha de chuva, prevenção contra enchentes">
       </div>
       <div class="txtOqueFazer">
         <h2>O que fazer após um:
@@ -125,7 +156,7 @@
         <p>Também buscamos aproximar a população das autoridades, promovendo uma cultura de prevenção, resposta rápida e conscientização, a fim de reduzir os impactos sociais, ambientais e humanos causados por alagamentos.</p>
         <a href="">Veja Mais</a>
       </div>
-      <img src="" alt="">
+      <img src="./assets/images/objetivo.png" alt="Alerta de enchente da defesa civil avisando a população sobre o risco de alagamento">
     </section>
 
     <section id="tecnologiasUtilizadas">
@@ -133,7 +164,7 @@
       <div class="linha"></div>
       <div class="containerTecnologias">
         <div class="tecDiv iot">
-          <img src="" alt="">
+          <img src="./assets/images/Radar.png" alt="Radar que monitora o nivel de água em tempo real">
           <div class="txtTec">
             <h4>IOT (Internet das Coisas)</h4>
             <p>Sensores instalados em ruas monitoram em tempo real o nível da água, acionando automaticamente alertas e notificações para autoridades e moradores.</p>
@@ -141,7 +172,7 @@
         </div>
 
         <div class="tecDiv">
-          <img src="" alt="">
+          <img src="./assets/images/celular.png" alt="Pessoa conferindo o celular">
           <div class="txtTec">
             <h4>Sistema de Alertas Inteligente</h4>
             <p>Alertas visuais e sonoros são divididos em três níveis: amarelo (atenção), laranja (preparação) e vermelho (ação imediata), cada um com instruções claras.</p>
@@ -149,7 +180,7 @@
         </div>
 
         <div class="tecDiv">
-          <img src="" alt="">
+          <img src="./assets/images/code.png" alt="Tecnologias usadas para o desenvolvimento do site">
           <div class="txtTec">
             <h4>Plataforma Web Responsiva</h4>
             <p>Um site acessível de qualquer dispositivo traz informações, orientações, canais de contato e mapa colaborativo de áreas afetadas, facilitando a navegação mesmo em emergências.o (ação imediata), cada um com instruções claras.</p>
@@ -157,7 +188,7 @@
         </div>
 
         <div class="tecDiv">
-          <img src="" alt="">
+          <img src="./assets/images/bombeiros.png" alt="Bombeiros em um resgate na enchente">
           <div class="txtTec">
             <h4>Integração com Serviços Públicos</h4>
             <p>A comunicação com defesa civil, bombeiros e demais órgãos é feita de forma automatizada e eficiente, agilizando o atendimento a emergências reais.</p>
@@ -242,9 +273,10 @@
       <div class="linha"></div>
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fsthkr9Y0D8?si=EnEZ6aNDiqx8IniV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>Agora que você assistiu ao vídeo, é hora de testar seus conhecimentos! O quiz a seguir foi elaborado com base nas orientações apresentadas e tem como proposta concretizar o que foi aprendido, além de contribuir para sua preparação em casos reais de enchente. Responda com atenção e veja se você está pronto(a) para agir com segurança diante desse tipo de emergência.</p>
-      <a href="./quiz/quiz.html">Começar</a>
+      <a href="./quiz.html">Começar</a>
     </section>
 
+    <section id="footer">
       <footer>
         <div class="linhaFooter"></div>
         <div class="testosFooter">
@@ -272,8 +304,10 @@
             <p>inventado@gmail.com</p>
           </div>
         </div>
+        <div class="footer"></div>
       </footer>
+    </section>
   </main>
-  <script src="scrip.js"></script>
+  <script src="./assets/scripts/slider.js"></script>
 </body>
 </html>
