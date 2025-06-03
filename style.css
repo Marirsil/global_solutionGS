@@ -1,32 +1,7 @@
-li, a{
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  /* display: flex; */
-}
 
-ul{
-  display: flex;
-  gap: 2rem;
-}
-
-h1 { font: var(--h1); line-height: 58px; }
-h2 { font: var(--h2); line-height: 50px; }
-h3 { font: var(--h3); }
-h4 { font: var(--h4); letter-spacing: 0.5px; }
-h5 { font: var(--h5); }
-p,ul {font: var(--paragrafo1);}
-
-header{
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 3.625rem;
-  align-items: center;
-  background-color: #10191E;
-  height: 69px;
-}
 
 footer{
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,33 +14,32 @@ footer{
 }
 
 .linhaFooter{
-  width: 1500px;
+  width: 90%;
   border-top: 1px solid #2B3439;
   padding-top: 2rem;
 }
 
-.paginaInicial{
+#paginaInicial{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #131C21 100%), 
   url(../assets/images/background.png);
   background-size: cover;
-  height: 920px;
+  height: 780px;
   padding-top: 230px;
 }
 
 .textosPaginaInicial{
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
   justify-content: center;
   width: 600px;
   padding-left: 3.625rem;
-  background-color: #2B3439;
-  border-radius: 10px;
-  opacity: 70%;
+  background-color: var(--textBackground);
+  border-radius: 0 10px 10px 0;
   height: 190px;
 }
 
-.problema{
+#problema{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,8 +68,8 @@ footer{
 }
 
 .div{
-  width: 280px;
-  height: 312.67px;
+  width: 266px;
+  height: 297px;
   background-color: #2B3439;
   display: flex;
   flex-direction: column;
@@ -104,8 +78,11 @@ footer{
   border-radius: 10px;
   text-align: center;
 
+  p{
+    font: var(--divText);
+  }
   h4{
-    margin-block: 23px 21px;
+    margin-block: 23px 30px;
   }
   p:nth-of-type(2){
     margin-bottom: 18px;
@@ -115,9 +92,9 @@ footer{
   }
 }
 
-.alertas{
+#alertas{
   background-color: #10191E;
-  height: 445px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   padding-top: 54px;
@@ -134,7 +111,7 @@ footer{
 }
 
 .alerta{
-  width: 230px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,11 +128,11 @@ footer{
 
 .escolhaAlerta{
   border: 1px solid #ffffff;
-  margin-left: 360px;
+  margin-left: 210px;
   width: 253.5px;
 }
 
-.oqueFazer{
+#oqueFazer{
   height: 780px;
   display: flex;
   justify-content: center;
@@ -202,7 +179,7 @@ footer{
   }
 }
 
-.objetivos{
+#objetivos{
   background-color: #10191E;
   height: 708px;
   display: flex;
@@ -241,7 +218,7 @@ footer{
   }
 }
 
-.tecnologiasUtilizadas{
+#tecnologiasUtilizadas{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,7 +261,7 @@ footer{
   height: 215px;
 }
 
-.beneficiosAplicacoesPublicoAlvo{
+#beneficiosAplicacoesPublicoAlvo{
   background-color: #10191E;
   height: 712px;
   flex-direction: column;
@@ -343,13 +320,12 @@ footer{
   }
 }
 
-.entreEmContato{
+#entreEmContato{
   height:730px;
   display: flex;
   gap: 86px;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 
 .txtEntreEmContato{
@@ -375,7 +351,6 @@ footer{
   justify-content: center;
   background-color: #10191E;
   border-radius: 20px;
-  /* border: 1px solid red; */
 
   form button{
     width: 335px;
@@ -390,23 +365,24 @@ footer{
 
   .select{
     display: flex;
-    justify-content: baseline;
+    justify-content: space-between;
     gap: 10px;
     display: flex;
-    /* border: 1px solid red; */
     select{
       appearance: none; 
       background-color: #2B3439;
       border: none;
       width: 94px;
       height: 20px;
-      color: var(--btnEnviar);
+      color: var(--textColor70);
       border-radius: 5px;
-      border: 1px solid var(--textColor40);
+      text-align-last: center;
+      margin-bottom: 10px;
     }
     .label{
-      color: var(--textColor70);
-      font: var(--placeholder);
+      color: var(--textColor70);;
+      font: var(--h5);
+      margin-bottom: 10px;
     }
   }
 }
@@ -433,27 +409,52 @@ footer{
   }
 }
 
-
-.anexo{
-  height: 652px;
+#anexo{
+  height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-}
 
-.newsletterForm{
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  p{
+    padding: 24px 20px;
+    width: 950px;
+    text-align: center;
+  }
+
+  iframe{
+    width: 757px;
+    height: 425px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+  }
+
+  .linha{
+    margin-bottom: 30px;
+  }
 }
 
 .testosFooter{
   height: 252px;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 130px;
+
+  .linha{
+    width: 40px;
+    margin-block: 6px 27px;
+  }
 }
 
 .anexo, footer {

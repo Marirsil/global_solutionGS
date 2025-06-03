@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -21,19 +21,22 @@
         <li><a href="">Tecnologias</a></li>
         <li><a href="">Benefícios</a></li>
         <li><a href="">Entre em contato</a></li>
+        <li><a href="./quiz/quiz.html">Quiz</a></li>
       </ul>
     </nav>
-    <img src="" alt="Icone de modo noturno">
+    <button><img src="./assets/images/lua-crescente.png" alt="Icone de modo noturno"></button>
   </header>
   <main>
-    <section class="paginaInicial">
+    <section id="paginaInicial">
+      
+
       <div class="textosPaginaInicial">
         <h1>A água que salva também pode destruir.</h1>
         <p>Conscientizar é a primeira defesa</p>
       </div>
     </section>
 
-    <section class="problema">
+    <section id="problema">
       <h3>Qual o problema?</h3>
       <div class="containerProblemas">
         <div class="div">
@@ -66,7 +69,7 @@
       </div>
     </section>
 
-    <section class="alertas">
+    <section id="alertas">
       <h3>Tipos de Alertas Utilizados</h3>
       <div class="coresAlertas">
         <div class="alerta">
@@ -91,7 +94,7 @@
       <div class="linhaDivisoria"><div class="escolhaAlerta"></div></div>
     </section>
 
-    <section class="oqueFazer">
+    <section id="oqueFazer">
       <div class="imgsOqueFazer">
         <img class="img1" src="./assets/images/temponublado.png" alt="">
         <img class="img2" src="./assets/images/neblina.png" alt="">
@@ -113,7 +116,7 @@
       </div>
     </section>
 
-    <section class="objetivos">
+    <section id="objetivos">
       <div class="txtObjetivos">
         <h2>Os objetivos a serem alcançados</h2>
         <div class="linha"></div>
@@ -125,7 +128,7 @@
       <img src="" alt="">
     </section>
 
-    <section class="tecnologiasUtilizadas">
+    <section id="tecnologiasUtilizadas">
       <h2>As tecnologias a serem utilizadas</h2>
       <div class="linha"></div>
       <div class="containerTecnologias">
@@ -163,7 +166,7 @@
       </div>
     </section>
 
-    <section class="beneficiosAplicacoesPublicoAlvo">
+    <section id="beneficiosAplicacoesPublicoAlvo">
       <div class="beneficiosAplicacao">
         <h2>Benefícios e Aplicações no Dia a Dia</h2>
         <div class="linha"></div>
@@ -194,7 +197,7 @@
       </div>
     </section>
 
-    <section class="entreEmContato">
+    <section id="entreEmContato">
       <div class="txtEntreEmContato">
         <h2>Entre em contato</h2>
         <div class="linha"></div>
@@ -212,68 +215,65 @@
             <textarea name="observacoes" placeholder="Observações ou sugestões:"></textarea>
           </div>
 
-          <div class="select">
-            <label class="label" for="categoria">Sua região alaga com qual frequencia?</label>
+          <div class="select checkbox">
+            <label class="label" for="concordo">Sua região costuma alagar?</label>
             <select id="categoria">
-              <option value="simEnchentes">Nunca</option>
-              <option value="nãoEnchentes">Só em chuvas fortes </option>
-              <option value="nãoEnchentes">Frequentemente</option>
+              <option value="" disabled selected>selecione</option>
+              <option value="nãoEnchentes">Sim</option>
+              <option value="nãoEnchentes">Não</option>
             </select>
           </div>
-          <div class="select checkbox">
-            <label class="label" for="concordo">Sua região alaga com qual frequencia?</label>
-            <input type="checkbox" name="concordo" id="concordo">
+          <div class="select">
+            <label class="label" for="categoria">Se sim, com qual frequência?</label>
+            <select id="categoria">
+              <option value="" disabled selected>selecione</option>
+              <option value="nãoEnchentes">Só em chuvas fortes</option>
+              <option value="nãoEnchentes">Com qualquer chuva</option>
+              <option value="nãoEnchentes">Nunca</option>
+            </select>
           </div>
-          
           <button type="submit">Enviar</button>
         </form>
       </div>
     </section>
 
-    <section class="anexo">
-      <h2>Vídeo Explicativo</h2>
+    <section id="anexo">
+      <h2>Você Está Preparado?</h2>
       <div class="linha"></div>
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fsthkr9Y0D8?si=EnEZ6aNDiqx8IniV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Inscreva-se para receber novidades e dicas de prevenção.</p>
+      <p>Agora que você assistiu ao vídeo, é hora de testar seus conhecimentos! O quiz a seguir foi elaborado com base nas orientações apresentadas e tem como proposta concretizar o que foi aprendido, além de contribuir para sua preparação em casos reais de enchente. Responda com atenção e veja se você está pronto(a) para agir com segurança diante desse tipo de emergência.</p>
+      <a href="./quiz/quiz.html">Começar</a>
     </section>
 
       <footer>
-        <div class="newsletter">
-          <div class="newsletterForm">
-            <h4>NEWSLETTER</h4>
-            <form action="">
-              <input type="email" name="email" placeholder="Digite seu e-mail">
-              <button type="submit"><img src="" alt="icon de carta"></button>
-            </form>
+        <div class="linhaFooter"></div>
+        <div class="testosFooter">
+          <div class="sobreNosFooter">
+            <h4>SOBRE NÓS</h4>
+            <div class="linha"></div>
+            <p>Sobre nós</p>
+            <p>Privacidade</p>
+            <p>Contato</p>
           </div>
-          <div class="linhaFooter"></div>
-          <div class="testosFooter">
-            <div class="sobreNosFooter">
-              <h4>SOBRE NÓS</h4>
-              <div class="linha"></div>
-              <p>Sobre nós</p>
-              <p>Privacidade</p>
-              <p>Contato</p>
-            </div>
 
-            <div class="clientesFooter">
-              <h4>Duvidas</h4>
-              <div class="linha"></div>
-              <p>FAQ</p>
-              <p>Mais informações</p>
-              <p>Duvidas frequentes</p>
-            </div>
+          <div class="clientesFooter">
+            <h4>Duvidas</h4>
+            <div class="linha"></div>
+            <p>FAQ</p>
+            <p>Mais informações</p>
+            <p>Duvidas frequentes</p>
+          </div>
 
-            <div class="clientesFooter">
-              <h4>Contato</h4>
-              <div class="linha"></div>
-              <p>Av. Paulista, nº 1000</p>
-              <p>São Paulo, Brazil</p>
-              <p>inventado@gmail.com</p>
-            </div>
+          <div class="clientesFooter">
+            <h4>Contato</h4>
+            <div class="linha"></div>
+            <p>Av. Paulista, nº 1000</p>
+            <p>São Paulo, Brazil</p>
+            <p>inventado@gmail.com</p>
           </div>
         </div>
       </footer>
   </main>
+  <script src="scrip.js"></script>
 </body>
 </html>

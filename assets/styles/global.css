@@ -5,34 +5,21 @@
   padding: 0;
   box-sizing: border-box;
   color: #FFFFFF;
-  /* font-family: "Libre Baskerville", serif; */
 }
+
+h1 { font: var(--h1); line-height: 58px; }
+h2 { font: var(--h2); line-height: 50px; }
+h3 { font: var(--h3); }
+h4 { font: var(--h4); letter-spacing: 0.5px; }
+h5 { font: var(--h5); }
+p,ul {font: var(--paragrafo1);}
 
 body{
   background-color: #131C21;
 }
 
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-
 :root {
-  --bodyColor: #0D0D0D;
+  --textBackground: #2b3439b3;
   --textColor: #F9F9FB;
   --textColor40: #6D7376;;
   --textColor70: #f9f9fbb4;
@@ -54,4 +41,6 @@ body{
   --button: 300 20px var(--league-spartan);
   --placeholder: 400 12px var(--libre-baskerville);
   --btnEnviar: 600 24px/30px var(--league-spartan);
+  --header : 300 17px var(--league-spartan);
+  --divText: 300 15px var(--league-spartan);
 }

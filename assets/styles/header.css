@@ -1,0 +1,34 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3.625rem;
+  align-items: center;
+  background-color: #10191E;
+  height: 69px;
+  ul{
+    font: var(--header);
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  img{
+    width: 26px;
+    height: 26px;
+  }
+}
+
+li, a{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul{
+  display: flex;
+  gap: 2rem;
+}
+
+
