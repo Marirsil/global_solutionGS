@@ -1,7 +1,5 @@
-
-
 footer{
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,21 +18,22 @@ footer{
 }
 
 #paginaInicial{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #131C21 100%), 
-  url(../assets/images/background.png);
   background-size: cover;
-  height: 780px;
+  height: 770px;
+  position: relative;
   padding-top: 230px;
 }
 
-.textosPaginaInicial{
+.textosPaginaInicial {
+  position: relative;
+  z-index: 6; 
   display: flex;
   flex-direction: column;
   gap: 8px;
   justify-content: center;
   width: 600px;
   padding-left: 3.625rem;
-  background-color: var(--textBackground);
+  background-color: var(--txtPaginaInicial);
   border-radius: 0 10px 10px 0;
   height: 190px;
 }
@@ -459,5 +458,5 @@ footer{
 
 .anexo, footer {
   background-color: linear-gradient(to bottom, red(0, 0, 0, 0) 70%, red 100%);
-  /* background-color: red; */
 }
+
