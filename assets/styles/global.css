@@ -25,6 +25,15 @@ body{
   --textColor70: #f9f9fbb4;
   --detalhes: #2B3439;
   --txtPaginaInicial: #2b3439b3;
+  --white: #FFFFFF;
+  --darkBlue: #131C21;
+  --quizTitleColor: #001e4d;
+  --progressBgColor: #ccc;
+  --progressBarColor: #4caf50;
+  --btnHoverBg: #3a4258;
+  --correctBg: #9aeabc;
+  --incorrectBg: #ff9393;
+
 
 
   --libre-baskerville: 'Libre Baskerville', sans-serif;
