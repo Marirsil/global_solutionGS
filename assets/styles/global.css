@@ -30,9 +30,12 @@ body{
   --quizTitleColor: #001e4d;
   --progressBgColor: #ccc;
   --progressBarColor: #4caf50;
+
   --btnHoverBg: #3a4258;
+  
   --correctBg: #9aeabc;
   --incorrectBg: #ff9393;
+  
 
 
 
@@ -54,3 +57,21 @@ body{
   --divText: 300 15px var(--league-spartan);
   --quizQuestion: 300 30px var(--league-spartan);
 }
+
+
+[data-theme="light"]{
+  --backgroundColor: #F3F7F9; /*ok*/
+  --sectionColor: #E9EEF2; /*ok*/
+  --textColor40: #000; /*ok*/ 
+  --textColor70: #000; /*ok*/
+  --detalhes: #D3DBE0; /*ok*/
+  --txtPaginaInicial: #131C21; /*ok*/
+  --white: #131C21; /*ok*/
+  --darkBlue: #F3F7F9; /*ok*/
+  --quizTitleColor: #F3F7F9;/*ok*/
+  --progressBgColor: #ccc;/*ok*/
+  --progressBarColor: #4caf50;/*ok*/
+  --btnHoverBg: #3a4258;/*ok*/
+  --correctBg: #9aeabc;/*ok*/
+  --incorrectBg: #ff9393;/*ok*/
+} 
