@@ -1,12 +1,11 @@
 .slider {
   width: 100vw;
-  height: 100vh;
+  height: 92vh;
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
   z-index: -1;
-  
 }
 
 .slider .list {

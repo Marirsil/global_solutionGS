@@ -53,10 +53,8 @@ footer{
 .containerProblemas{
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 10px;
-  justify-content: center;
-  padding-top: 30px;
+  margin-top: 30px;
 
   .alertaResposta{
     width: 210px;
@@ -68,11 +66,14 @@ footer{
     font: var(--paragrafoContainer);
     width: 230px;
   }
+  p:first-of-type{
+    margin-top: 5px;
+  }
 }
 
 .div{
   width: 266px;
-  height: 297px;
+  height: 275px;
   background-color: var(--detalhes);
   display: flex;
   flex-direction: column;
@@ -81,17 +82,18 @@ footer{
   border-radius: 10px;
   text-align: center;
 
+  img{
+    height: 24px;
+    width: 24px;
+  }
+
   p{
     font: var(--divText);
+    line-height: 1.2rem;
+    width: 200px;
   }
   h4{
     margin-block: 23px 30px;
-  }
-  p:nth-of-type(2){
-    margin-bottom: 18px;
-  }
-  p:first-of-type{
-    font-size: 24px;
   }
 }
 
@@ -102,6 +104,9 @@ footer{
   flex-direction: column;
   padding-top: 54px;
   align-items: center;
+  h3{
+    margin-top: 10px;
+  }
 }
 
 .coresAlertas{
@@ -110,11 +115,11 @@ footer{
   align-items: center;
   justify-content: center;
   gap: 150px;
-  margin-block: 55px 69.5px;
+  margin-block: 65px 80px;
 }
 
 .alerta{
-  width: 250px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,14 +130,20 @@ footer{
 }
 
 .linhaDivisoria{
+  position: relative;
   border-top: 3px solid var(--detalhes);
   width: 100%;
 }
 
 .escolhaAlerta{
-  border: 1px solid var(--white);
-  margin-left: 210px;
-  width: 253.5px;
+  position: absolute;
+  top: -3px; 
+  height: 3px;
+  width: 330px;
+  background-color: white;
+  transition: margin-left 0.3s ease; 
+  /* border: 1px solid red; */
+  left: 8.5%;
 }
 
 #oqueFazer{
@@ -260,7 +271,6 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 11px;
-  h4{font: --paragrafo1Bold}
 }
 
 .containerTecnologias img{
@@ -387,8 +397,10 @@ footer{
       margin-bottom: 10px;
     }
     .label{
-      color: var(--buttonaparte);;
-      font: var(--h5);
+      display: flex;
+      align-items: center;
+      color: var(--textColor40);
+      font: var(--label);
       margin-bottom: 10px;
     }
   }
@@ -409,6 +421,11 @@ footer{
     border-bottom: 1px solid var(--detalhes);
     line-height: 1.6rem;
     height: 20px;
+    color: var(--textColor40);
+  }
+
+  input::placeholder,textarea::placeholder {
+    color: var(--textColor40); 
   }
 
   textarea{
@@ -464,7 +481,24 @@ footer{
   }
 }
 
-.anexo, footer {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, red 100%);
+.container-gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, var(--sectionColor) 100%);
 }
 
+strong{
+  font-weight: 600;
+}
+
+.msg{
+  position: absolute;
+  color: var(--correctBg);
+  font-weight: bold;
+  margin-top: 10px;
+  font: var(--label);
+}
+
+.msg.error {
+  position: absolute;
+  color: var(--incorrectBg);
+  font: var(--label);
+}

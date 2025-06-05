@@ -13,9 +13,13 @@ header {
     border: none;
     cursor: pointer;
   }
-  img {
+  .iconMode {
     width: 1.625rem;
     height: 1.625rem;
+  }
+  .logo{
+    width: 6rem;
+    height: 2.3rem;
   }
 }
 
