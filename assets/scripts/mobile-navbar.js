@@ -6,6 +6,7 @@ class MobileNavbar {
     this.activeClass = "active";
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleLinkClick = this.handleLinkClick.bind(this);
   }
 
   animateLinks() {
@@ -19,13 +20,31 @@ class MobileNavbar {
   }
 
   handleClick() {
-    this.navList.classList.toggle(this.activeClass);
+    const isActive = this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);
     this.animateLinks();
+
+    // Bloqueia scroll da página quando menu aberto
+    if (isActive) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+  handleLinkClick() {
+    // Fecha menu quando clica no link
+    this.navList.classList.remove(this.activeClass);
+    this.mobileMenu.classList.remove(this.activeClass);
+    this.animateLinks();
+    document.body.style.overflow = ''; // libera scroll
   }
 
   addClickEvent() {
     this.mobileMenu.addEventListener("click", this.handleClick);
+    this.navLinks.forEach(link => {
+      link.addEventListener("click", this.handleLinkClick);
+    });
   }
 
   init() {
@@ -39,6 +58,6 @@ class MobileNavbar {
 const mobileNavbar = new MobileNavbar(
   ".mobile-menu",
   ".nav-list",
-  ".nav-list li",
+  ".nav-list li"
 );
 mobileNavbar.init();
