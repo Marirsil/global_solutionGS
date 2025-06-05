@@ -1,221 +1,219 @@
-footer {
-  margin-top: 1.875rem;
+footer{
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.linha {
-  border-top: 1px solid #FFFFFF;
-  width: 14.28125rem; 
+.linha{
+  border-top: 1px solid var(--white);
+  width: 228.5px;
 }
 
-.linhaFooter {
+.linhaFooter{
   width: 90%;
-  border-top: 1px solid var(--detalhes);
-  padding-top: 2rem; 
+  border-top: 1px solid var(--detalhes );
+  padding-top: 2rem;
 }
 
-#paginaInicial {
+#paginaInicial{
   background-size: cover;
-  height: 48.125rem;
+  height: 770px;
   position: relative;
-  padding-top: 14.375rem; 
+  padding-top: 230px;
 }
 
 .textosPaginaInicial {
   position: relative;
-  z-index: 6;
+  z-index: 6; 
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; 
+  gap: 8px;
   justify-content: center;
-  width: 37.5rem; 
+  width: 600px;
   padding-left: 3.625rem;
   background-color: var(--txtPaginaInicial);
-  border-radius: 0 0.625rem 0.625rem 0; 
-  height: 11.875rem; 
+  border-radius: 0 10px 10px 0;
+  height: 190px;
 }
 
-#problema {
+#problema{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 33.75rem; 
+  height: 540px;
 }
 
-.containerProblemas {
+.containerProblemas{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.625rem; 
+  gap: 10px;
   justify-content: center;
-  padding-top: 1.875rem; 
+  padding-top: 30px;
 
-  .alertaResposta {
-    width: 13.125rem; 
+  .alertaResposta{
+    width: 210px;
   }
-  h4 {
-    width: 14.375rem; 
+  h4{
+    width: 230px;
   }
-  p {
+  p{
     font: var(--paragrafoContainer);
-    width: 14.375rem; 
+    width: 230px;
   }
 }
 
-.div {
-  width: 16.625rem; 
-  height: 18.5625rem; 
+.div{
+  width: 266px;
+  height: 297px;
   background-color: var(--detalhes);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1.5625rem; 
-  border-radius: 0.625rem; 
+  padding-top: 25px;
+  border-radius: 10px;
   text-align: center;
 
-  p {
+  p{
     font: var(--divText);
   }
-  h4 {
-    margin-block: 1.4375rem 1.875rem; 
+  h4{
+    margin-block: 23px 30px;
   }
-  p:nth-of-type(2) {
-    margin-bottom: 1.125rem; 
+  p:nth-of-type(2){
+    margin-bottom: 18px;
   }
-  p:first-of-type {
-    font-size: 1.5rem; 
+  p:first-of-type{
+    font-size: 24px;
   }
 }
 
-#alertas {
+#alertas{
   background-color: var(--sectionColor);
-  height: 30rem; 
+  height: 480px;
   display: flex;
   flex-direction: column;
-  padding-top: 3.375rem; 
+  padding-top: 54px;
   align-items: center;
 }
 
-.coresAlertas {
+.coresAlertas{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 9.375rem; 
-  margin-block: 3.4375rem 4.34375rem; 
+  gap: 150px;
+  margin-block: 55px 69.5px;
 }
 
-.alerta {
-  width: 15.625rem; 
+.alerta{
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  h4 {
-    margin-block: 1.4181875rem 0.375rem; 
-  }
-  h5 {
-    margin-bottom: 0.9375rem; 
-  }
+  h4{margin-block: 22.71px 6px;}
+  h5{margin-bottom: 15px}
 }
 
-.linhaDivisoria {
+.linhaDivisoria{
   border-top: 3px solid var(--detalhes);
   width: 100%;
 }
 
-.escolhaAlerta {
-  border: 1px solid #ffffff;
-  margin-left: 13.125rem; 
-  width: 15.84375rem; 
+.escolhaAlerta{
+  border: 1px solid var(--white);
+  margin-left: 210px;
+  width: 253.5px;
 }
 
-#oqueFazer {
-  height: 48.75rem; 
+#oqueFazer{
+  height: 780px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .imgsOqueFazer {
-  height: 36.875rem; 
+  height: 590px;
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 2.3125rem; 
+  grid-template-columns:auto auto;
+  gap: 37px;
   grid-column: 5rem;
-}
+} 
 
 .img4 {
-  margin-top: -7.5rem; 
+  margin-top: -120px;
 }
 
-.txtOqueFazer {
-  width: 28.4375rem; 
-  margin-left: 3.75rem; 
+.txtOqueFazer{
+  width: 455px;
+  margin-left: 60px;
   flex-direction: column;
-  h2 {
-    height: 5.4375rem; 
+  h2{
+    height: 87px;
   }
-  div {
-    margin-block: 1.75rem 2rem;
+  div{
+    margin-block: 28px 32px;
   }
-  ul {
+  ul{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-bottom: 3.625rem;
+    margin-bottom: 58px;
   }
-  a {
+  li{
+    color: var(--white);
+  }
+  a{
+    color: var(--txtbuttonaparte);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--detalhes);
-    width: 10.875rem; 
-    height: 2.875rem;
-    border-radius: 2.5rem; 
+    background-color: var(--buttonaparte);
+    width: 174px;
+    height: 46px;
+    border-radius: 40px;
     font: var(--button);
   }
 }
 
-#objetivos {
+#objetivos{
   background-color: var(--sectionColor);
-  height: 44.25rem;
+  height: 708px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  img {
-    width: 15.75rem;
-    height: 32rem; 
+  img{
+    width: 252px;
+    height: 512px;
   }
 
-  .txtObjetivos {
-    width: 35.4375rem;
-    margin-right: 4.3125rem; 
-    text-align: right;
+  .txtObjetivos{
+    width: 567px;
+    margin-right: 69px;
+    text-align: right;  
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
-    .linha {
-      margin-block: 1.5rem 1.875rem; 
+    .linha{
+      margin-block: 24px 30px;
     }
 
-    p:first-of-type {
-      margin-bottom: 1.5rem; 
-    }
+    p:first-of-type{margin-bottom: 24px;}
 
-    a {
-      margin-top: 1.8125rem; 
-      border: 1px solid #FFFFFF;
-      border-radius: 2.5rem; 
-      width: 10.875rem;
-      height: 2.5rem; 
+    a{
+      margin-top: 29px;
+      border: 1px solid var(--white);
+      border-radius: 40px;
+      width: 174px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -223,22 +221,22 @@ footer {
   }
 }
 
-#tecnologiasUtilizadas {
+#tecnologiasUtilizadas{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 52.125rem; 
+  height: 834px;
 
-  .linha {
-    margin-block: 1.25rem 2.3125rem; 
+  .linha{
+    margin-block: 20px 37px;
   }
 }
 
-.containerTecnologias {
-  height: 34.625rem;
-  width: 73.625rem; 
-  border-radius: 1.875rem; 
+.containerTecnologias{
+  height: 554px;
+  width: 1178px;
+  border-radius: 30px;
   background-color: var(--detalhes);
   display: grid;
   grid-template-columns: 525px 525px;
@@ -246,232 +244,226 @@ footer {
   justify-content: space-around;
 }
 
-.tecDiv {
+.tecDiv{
   display: flex;
   align-items: center;
-  height: 13.4375rem; 
-  gap: 2.375rem; 
+  height: 215px;
+  gap: 38px;
 }
 
-.txtTec {
-  width: 19.125rem;
+.txtTec{
+  width: 306px;
   display: flex;
   flex-direction: column;
-  gap: 0.6875rem; 
-  h4 {
-    font: var(--paragrafo1Bold); 
-  }
+  gap: 11px;
+  h4{font: --paragrafo1Bold} /*ajuda*/
 }
 
-.containerTecnologias img {
-  width: 11.25rem; 
-  height: 13.4375rem;
+.containerTecnologias img{
+  width: 180px;
+  height: 215px;
 }
 
-#beneficiosAplicacoesPublicoAlvo {
+#beneficiosAplicacoesPublicoAlvo{
   background-color: var(--sectionColor);
-  height: 44.5rem; 
+  height: 712px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 
-.beneficiosAplicacao {
+.beneficiosAplicacao{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 54.5625rem;
+  width: 873px;
 
-  .linha {
-    margin-block: 1.125rem 1.375rem; 
+  .linha{
+    margin-block: 18px 22px;
   }
 
-  p:first-of-type {
-    margin-bottom: 1.5rem; 
-  }
+  p:first-of-type{margin-bottom: 24px;}
 }
 
-.publicoAlvo {
+.publicoAlvo{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 4.375rem; 
+  margin-top: 70px;
 
-  .linhaPA {
-    border-left: 1px solid #FFFFFF;
-    height: 100%;
-    margin-inline: 3rem 2.63875rem;
+  .linhaPA{
+    border-left: 1px solid var(--white);
+    height: 100%; 
+    margin-inline: 48px 42.22px;
   }
 }
 
-.containerTextsPa {
+.containerTextsPa{
   display: flex;
   flex-direction: row;
-  gap: 0.9375rem; 
+  gap: 15px;
 }
 
-.textosPA {
+.textosPA{
   display: flex;
-  width: 12.3125rem; 
-  height: 8.0625rem; 
+  width: 197px;
+  height: 129px;
   background-color: var(--detalhes);
   text-align: center;
   align-items: center;
   justify-content: center;
-  border-radius: 0.3125rem; 
-  p {
+  border-radius: 5px;
+  p{
     font: var(--paragrafoContainer);
-    width: 10.5625rem; 
+    width: 169px;
     gap: 1rem;
   }
 }
 
-#entreEmContato {
-  height: 45.625rem; 
+#entreEmContato{
+  height:730px;
   display: flex;
-  gap: 5.375rem;
+  gap: 86px;
   align-items: center;
   justify-content: center;
 }
 
-.txtEntreEmContato {
-  width: 36rem; 
+.txtEntreEmContato{
+  width: 576px;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  h2 {
-    height: 2.3125rem; 
-  }
-  p:first-of-type {
-    margin-bottom: 1.5rem; 
-  }
+  h2{height: 37px;}
+  p:first-of-type{margin-bottom: 24px;}
 
-  .linha {
-    margin-block: 1.375rem 2.4375rem; 
+  .linha{
+    margin-block: 22px 39px ;
   }
 }
 
-.formulario {
-  width: 26.875rem; 
-  height: 25.8125rem;
+.formulario{
+  width: 430px;
+  height: 413px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--sectionColor);
-  border-radius: 1.25rem; 
+  border-radius: 20px;
 
-  form button {
-    width: 20.9375rem; 
-    height: 2.68rem; 
-    background-color: var(--detalhes);
-    border-radius: 1.875rem; 
+  form button{
+    width: 335px;
+    height: 42.91px;
+    background-color: var(--buttonaparte);
+    border-radius: 30px;
     border: none;
-    margin-top: 1.875rem; 
+    margin-top: 30px;
     font: var(--btnEnviar);
-    color: var(--textColor70);
+    color: var(--txtbuttonaparte);
   }
 
-  .select {
+  .select{
     display: flex;
     justify-content: space-between;
-    gap: 0.625rem;
+    gap: 10px;
     display: flex;
-    select {
-      appearance: none;
-      background-color: var(--detalhes);
+    select{
+      appearance: none; 
+      background-color: var(--buttonaparte);
       border: none;
-      width: 5.875rem; 
-      height: 1.25rem; 
-      color: var(--textColor70);
-      border-radius: 0.3125rem; 
+      width: 94px;
+      height: 20px;
+      color: var(--txtbuttonaparte);
+      border-radius: 5px;
       text-align-last: center;
-      margin-bottom: 0.625rem; 
+      margin-bottom: 10px;
     }
-    .label {
-      color: var(--textColor70);
+    .label{
+      color: var(--buttonaparte);;
       font: var(--h5);
-      margin-bottom: 0.625rem; 
+      margin-bottom: 10px;
     }
   }
 }
 
-.inputs {
-  width: 21.875rem; 
+.inputs{
+  width: 350px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; 
+  gap: 24px;
   border: none;
   outline: none;
   background-color: transparent;
 
-  input,
-  textarea {
+  input, textarea{
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid var(--textColor40);
+    border-bottom: 1px solid var(--detalhes);
     line-height: 1.6rem;
-    height: 1.25rem; 
+    height: 20px;
   }
 
-  textarea {
-    margin-bottom: 1.875rem; 
+  textarea{
+    margin-bottom: 30px;
   }
 }
 
-#anexo {
-  height: 56.25rem;
+#anexo{
+  height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 
-  p {
-    padding: 1.5rem 1.25rem; 
-    width: 59.375rem; 
+  p{
+    padding: 24px 20px;
+    width: 950px;
     text-align: center;
   }
 
-  iframe {
-    width: 47.3125rem; 
-    height: 26.5625rem; 
+  iframe{
+    width: 757px;
+    height: 425px;
     border: none;
-    border-radius: 1.25rem; 
+    border-radius: 20px;
   }
 
-  a {
+  a{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #fff;
-    height: 3.125rem;
-    width: 9.375rem; 
-    border-radius: 2.5rem; 
+    border: 1px solid var(--white);
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
   }
 
-  .linha {
-    margin-bottom: 1.875rem; 
+  .linha{
+    margin-bottom: 30px;
   }
 }
 
-.testosFooter {
-  height: 15.75rem; 
+.testosFooter{
+  height: 252px;
   display: flex;
   align-items: center;
-  gap: 8.125rem;
+  gap: 130px;
 
-  .linha {
-    width: 2.5rem;
-    margin-block: 0.375rem 1.6875rem; 
+  .linha{
+    width: 40px;
+    margin-block: 6px 27px;
   }
 }
 
-.anexo,
-footer {
+.anexo, footer {
   background-color: linear-gradient(to bottom, red(0, 0, 0, 0) 70%, red 100%);
+}
+
+p,h1,h2,h3,h4,h5{
+  color:var(--white);
 }

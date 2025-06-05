@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #FFFFFF;
 }
 
 h1 { font: var(--h1); line-height: 58px; }
@@ -26,13 +25,20 @@ body{
   --detalhes: #2B3439;
   --txtPaginaInicial: #2b3439b3;
   --white: #FFFFFF;
+
+  --buttonaparte: #2B3439;
+  --txtbuttonaparte: #D9D9D9;
+
   --darkBlue: #131C21;
   --quizTitleColor: #001e4d;
   --progressBgColor: #ccc;
   --progressBarColor: #4caf50;
+
   --btnHoverBg: #3a4258;
+  
   --correctBg: #9aeabc;
   --incorrectBg: #ff9393;
+  
 
 
 
@@ -54,3 +60,25 @@ body{
   --divText: 300 15px var(--league-spartan);
   --quizQuestion: 300 30px var(--league-spartan);
 }
+
+
+[data-theme="light"]{
+  --backgroundColor: #F3F7F9; /*ok*/
+  --sectionColor: #E9EEF2; /*ok*/
+  --textColor40: #7F7F7F; /*ok*/ 
+  --textColor70: #F3F7F9; /*ok*/
+  --detalhes: #D3DBE0; /*ok*/
+  --txtPaginaInicial: rgba(211, 219, 224, 0.7); /*ok*/
+  --white: #131C21; /*ok*/
+
+  --buttonaparte:#131C21;
+  --txtbuttonaparte:#D9D9D9;
+
+  --darkBlue: #F3F7F9; /*ok*/
+  --quizTitleColor: #F3F7F9;/*ok*/
+  --progressBgColor: #ccc;/*ok*/
+  --progressBarColor: #4caf50;/*ok*/
+  --btnHoverBg: #3a4258;/*ok*/
+  --correctBg: #9aeabc;/*ok*/
+  --incorrectBg: #ff9393;/*ok*/
+} 
