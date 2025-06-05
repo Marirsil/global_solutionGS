@@ -9,27 +9,33 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles/slider.css">
   <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./assets/scripts/mode.js">
   <title>Document</title>
 </head>
 <body>
+
   <header>
-    <img src="" alt="Logo da empresa">
+    <img class="logo" src="./assets/images/logoclara.png" alt="Logo da empresa">
     <nav class="navBar">
-      <ul>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
         <li><a href="#problema">O problema</a></li>
         <li><a href="#alertas">Alertas</a></li>
         <li><a href="#objetivos">Objetivos</a></li>
         <li><a href="#tecnologiasUtilizadas">Tecnologias</a></li>
         <li><a href="#beneficiosAplicacoesPublicoAlvo">Benefícios</a></li>
+        <li><a href="#entreEmContato">Entre em contato</a></li>
         <li><a href="#anexo">Quiz</a></li>
-        <li><a href="#footer">Entre em contato</a></li>
       </ul>
     </nav>
-    <button>
-      <img src="./assets/images/lua-crescente.png" alt="Icone de modo noturno">
+    <button class="mode-button">
+      <img class="iconMode" src="./assets/images/lua-crescente.png" alt="Icone de modo noturno">
     </button>
   </header>
+  
   <main>
     <section id="paginaInicial">
       <div class="slider">
@@ -74,178 +80,173 @@
       <h3>Qual o problema?</h3>
       <div class="containerProblemas">
         <div class="div">
-          <p>🔔</p>
+          <img src="./assets/images/sinoEmoji.png" alt="icone de sino">
           <h4 class="alertaResposta">Falta de resposta adequada a alertas</h4>
-          <p>Alertas existem, mas a população não sabe o que fazer com eles. </p>
-          <p>Segundo a Defesa Civil, milhares de pessoas recebem alertas de risco por SMS, mas menos de 30% tomam medidas práticas após o aviso. O problema não é só avisar — é educar e orientar.</p>
+          <p>Muitos recebem alertas, mas <strong>não sabem como agir</strong>. Segundo a Defesa Civil, <strong>menos de 30%</strong> tomam atitudes após o aviso. É preciso <strong>educar e orientar</strong>, não só avisar.</p>
         </div>
-
+    
         <div class="div">
-          <p>🌧️</p>
-          <h4>Enchentes são cada vez mais frequentes e devastadoras</h4>
-          <p>A cada ano, o Brasil registra novos recordes de chuvas e prejuízos com alagamentos.</p>
-          <p>Entre 2013 e 2023, mais de 8,2 milhões de brasileiros foram afetados por enchentes. Além dos danos materiais, essas tragédias causam mortes evitáveis e deslocamentos em massa.</p>
+          <img src="./assets/images/chuvaEmoji.png" alt="icone de chuva">
+          <h4>Enchentes cada vez mais frequentes</h4>
+          <p>O Brasil bate <strong>recordes de chuvas</strong> e prejuízos. Entre 2013 e 2023, <strong>8,2 milhões</strong> foram afetados, com <strong>mortes e deslocamentos</strong> evitáveis.</p>
         </div>
-
+    
         <div class="div">
-          <p>🚨</p>
+          <img src="./assets/images/sireneEmoji.png" alt="icone de sirene">
           <h4>Lentidão na comunicação com os socorristas</h4>
-          <p>Profissionais como bombeiros e policiais enfrentam atrasos por falhas na comunicação com a população. </p>
-          <p>Em emergências, cada minuto conta. Muitos pedidos de socorro chegam tarde, de forma desorganizada ou sem localização precisa, dificultando o salvamento e agravando os impactos.</p>
+          <p>Faltam <strong>agilidade e precisão</strong> nos pedidos de ajuda. Sem <strong>localização exata</strong> e com dados confusos, o socorro atrasa e os riscos aumentam.</p>
         </div>
-
+    
         <div class="div">
-          <p>📵</p>
-          <h4>Falta de acesso rápido a informação confiável</h4>
-          <p>Em momentos de crise, fake news e desencontro de informações confundem ainda mais a população.</p>
-          <p>A ausência de um canal unificado, confiável e acessível para instruções e alertas leva muitas famílias a tomarem decisões erradas — ou simplesmente não fazerem nada.</p>
+          <img src="./assets/images/proibido_celular.png" alt="icone de é proibido celular">
+          <h4>Falta de acesso à informação confiável</h4>
+          <p><strong>Fake news</strong> e informações desencontradas <strong>confundem a população</strong>, que sem um canal claro e acessível, <strong>age errado ou não age</strong>.</p>
         </div>
       </div>
     </section>
-
+    
     <section id="alertas">
       <h3>Tipos de Alertas Utilizados</h3>
       <div class="coresAlertas">
-        <div class="alerta">
-          <img src="./assets/images/alertaAmarelo.png" alt="Imagem de dois circulos amarelos">
+        <div class="alerta alerta-amarelo">
+          <img src="./assets/images/alertaAmarelo.png" alt="Imagem de dois círculos amarelos">
           <h4>Alerta Amarelo</h4>
-          <h5>(atençâo)</h5>
-          <p>Clima indica possível risco de chuva forte nos próximos dias.</p>
+          <h5>(atenção)</h5>
+          <p>Chance de chuva forte nos próximos dias.</p>
         </div>
-        <div class="alerta">
-          <img src="./assets/images/alertaLaranja.png" alt="Imagem de dois circulos laranjas">
+        <div class="alerta alerta-laranja">
+          <img src="./assets/images/alertaLaranja.png" alt="Imagem de dois círculos laranjas">
           <h4>Alerta Laranja</h4>
-          <h5>(perigo Moderado)</h5>
-          <p>Chuva forte já acontecendo, com risco real de alagamento.</p>
+          <h5>(perigo moderado)</h5>
+          <p>Chuva intensa com risco de alagamento.</p>
         </div>
-        <div class="alerta">
-          <img src="./assets/images/alertaVermelho.png" alt="Imagem de dois circulos vermelhos">
+        <div class="alerta alerta-vermelho">
+          <img src="./assets/images/alertaVermelho.png" alt="Imagem de dois círculos vermelhos">
           <h4>Alerta Vermelho</h4>
-          <h5>(perigo Imediato)</h5>
-          <p>Chuvas intensas ou alagamentos já estão em curso com risco à vida.</p>
+          <h5>(perigo imediato)</h5>
+          <p>Alagamento em curso com risco à vida.</p>
         </div>
       </div>
       <div class="linhaDivisoria"><div class="escolhaAlerta"></div></div>
-    </section>
+    </section>    
 
     <section id="oqueFazer">
       <div class="imgsOqueFazer">
-        <img class="img1" src="./assets/images/temponublado.png" alt="Tempo nublado, cheio de nuvens cinzas">
-        <img class="img2" src="./assets/images/neblina.png" alt="Local cheio de neblina, com pouca visibilidade">
-        <img class="img3" src="./assets/images/previsao.png" alt="previsao do tempo na televisao com chuva">
-        <img class="img4" src="./assets/images/limpandocalha.png" alt="limpando calha de chuva, prevenção contra enchentes">
+        <img class="img1" src="./assets/images/temponublado.png" alt="Tempo nublado">
+        <img class="img2" src="./assets/images/neblina.png" alt="Neblina, pouca visibilidade">
+        <img class="img3" src="./assets/images/previsao.png" alt="Previsão do tempo com chuva">
+        <img class="img4" src="./assets/images/limpandocalha.png" alt="Limpando calha contra enchentes">
       </div>
+    
       <div class="txtOqueFazer">
-        <h2>O que fazer após um:
-          Alerta Amarelo</h2>
+        <h2>O que fazer no<br>Alerta Amarelo</h2>
         <div class="linha"></div>
         <ul>
-          <li>- Acompanhe canais oficiais (Defesa Civil, apps).</li>
-          <li>- Evite sair de casa ou transitar por áreas alagáveis.</li>
-          <li>- Combine rotas seguras com familiares e vizinhos.</li>
+          <li>- Acompanhe canais oficiais.</li>
+          <li>- Evite sair ou áreas alagáveis.</li>
+          <li>- Combine rotas seguras.</li>
           <li>- Proteja documentos e itens essenciais.</li>
-          <li>- Limpe calhas, bueiros e mantenha mochila de emergência preparada.</li>
+          <li>- Limpe calhas e prepare mochila de emergência.</li>
         </ul>        
         <a href="">Veja mais</a>
       </div>
-    </section>
+    </section>    
 
     <section id="objetivos">
       <div class="txtObjetivos">
         <h2>Os objetivos a serem alcançados</h2>
         <div class="linha"></div>
-        <p>Nosso objetivo é transformar alertas em ações efetivas, oferecendo informações claras e acessíveis sobre como a população deve agir em cada nível de risco climático e enchentes urbanas.</p>
+        <p>Nosso objetivo é transformar alertas em ações claras, orientando a população sobre como agir em cada nível de risco.</p>
 
-        <p>Também buscamos aproximar a população das autoridades, promovendo uma cultura de prevenção, resposta rápida e conscientização, a fim de reduzir os impactos sociais, ambientais e humanos causados por alagamentos.</p>
+        <p>Queremos aproximar a população das autoridades, promovendo prevenção e resposta rápida para reduzir os impactos das enchentes.</p>
         <a href="">Veja Mais</a>
       </div>
       <img src="./assets/images/objetivo.png" alt="Alerta de enchente da defesa civil avisando a população sobre o risco de alagamento">
     </section>
 
     <section id="tecnologiasUtilizadas">
-      <h2>As tecnologias a serem utilizadas</h2>
+      <h2>Tecnologias Utilizadas</h2>
       <div class="linha"></div>
       <div class="containerTecnologias">
         <div class="tecDiv iot">
-          <img src="./assets/images/Radar.png" alt="Radar que monitora o nivel de água em tempo real">
+          <img src="./assets/images/Radar.png" alt="Radar que monitora o nível da água">
           <div class="txtTec">
             <h4>IOT (Internet das Coisas)</h4>
-            <p>Sensores instalados em ruas monitoram em tempo real o nível da água, acionando automaticamente alertas e notificações para autoridades e moradores.</p>
+            <p>Sensores instalados nas ruas monitoram em tempo real o nível da água, acionando alertas automáticos para autoridades e moradores.</p>
           </div>
         </div>
-
+    
         <div class="tecDiv">
           <img src="./assets/images/celular.png" alt="Pessoa conferindo o celular">
           <div class="txtTec">
             <h4>Sistema de Alertas Inteligente</h4>
-            <p>Alertas visuais e sonoros são divididos em três níveis: amarelo (atenção), laranja (preparação) e vermelho (ação imediata), cada um com instruções claras.</p>
+            <p>Alertas visuais e sonoros divididos em três níveis: amarelo (atenção), laranja (preparação) e vermelho (ação imediata), cada um com instruções claras.</p>
           </div>
         </div>
-
+    
         <div class="tecDiv">
-          <img src="./assets/images/code.png" alt="Tecnologias usadas para o desenvolvimento do site">
+          <img src="./assets/images/code.png" alt="Tecnologias do site">
           <div class="txtTec">
             <h4>Plataforma Web Responsiva</h4>
-            <p>Um site acessível de qualquer dispositivo traz informações, orientações, canais de contato e mapa colaborativo de áreas afetadas, facilitando a navegação mesmo em emergências.o (ação imediata), cada um com instruções claras.</p>
+            <p>Site acessível em qualquer dispositivo, com informações, orientações, contatos e mapa colaborativo de áreas afetadas.</p>
           </div>
         </div>
-
+    
         <div class="tecDiv">
-          <img src="./assets/images/bombeiros.png" alt="Bombeiros em um resgate na enchente">
+          <img src="./assets/images/bombeiros.png" alt="Bombeiros em resgate">
           <div class="txtTec">
             <h4>Integração com Serviços Públicos</h4>
-            <p>A comunicação com defesa civil, bombeiros e demais órgãos é feita de forma automatizada e eficiente, agilizando o atendimento a emergências reais.</p>
+            <p>Comunicação automatizada com defesa civil, bombeiros e órgãos para agilizar atendimentos emergenciais.</p>
           </div>
         </div>
       </div>
     </section>
+    
 
     <section id="beneficiosAplicacoesPublicoAlvo">
       <div class="beneficiosAplicacao">
-        <h2>Benefícios e Aplicações no Dia a Dia</h2>
+        <h2>Benefícios e Aplicações</h2>
         <div class="linha"></div>
-        <p>Nossa solução oferece alertas inteligentes que orientam a população sobre o que fazer em cada nível de risco, promovendo ações rápidas e eficazes. Além disso, facilita a comunicação com autoridades, como bombeiros e defesa civil, agilizando o socorro em momentos críticos. Por meio de um sistema automatizado, conecta sensores de monitoramento à rede de resposta emergencial, otimizando decisões e reduzindo danos.</p>     
-        <p>No cotidiano, mesmo fora dos períodos de chuva, a plataforma segue atuando com informações educativas, dicas de prevenção e canais de contato, promovendo uma cultura de segurança. Assim, ajudamos a evitar tragédias, garantir a proteção de vidas e manter a população bem-informada e preparada para agir com segurança em qualquer situação.</p>
+        <p>Nossa solução oferece alertas inteligentes que orientam a população sobre como agir em cada nível de risco, facilitando decisões rápidas e eficientes. Também agiliza a comunicação para um socorro mais rápido e organizado.</p>
+        <p>Além dos alertas, a plataforma traz informações educativas e dicas de prevenção, promovendo uma cultura de segurança e preparando a população para agir com segurança em qualquer situação.</p>
       </div>
-
+    
       <div class="publicoAlvo">
-        <h4>Publico alvo</h4>
+        <h4>Público-alvo</h4>
         <div class="linhaPA"></div>
         <div class="containerTextsPa">
           <div class="textosPA">
-            <p>Autoridades civis, como bombeiros, defesa civil e policiais militares, que atuam na linha de frente em situações de risco.</p>
+            <p>Famílias e moradores de áreas sujeitas a enchentes, para garantir proteção e segurança.</p>
           </div>
-
           <div class="textosPA">
-            <p>Moradores de áreas de risco e regiões urbanas frequentemente afetadas por enchentes e alagamentos.</p>
+            <p>Proprietários e cuidadores de animais domésticos e selvagens, visando preservar vidas animais.</p>
           </div>
-
           <div class="textosPA">
-            <p>Comunidades vulneráveis, com acesso limitado à informação, tecnologia e infraestrutura de resposta a emergências.</p>
+            <p>Comunidades em áreas vulneráveis que precisam de informações claras para agir em emergências.</p>
           </div>
-
           <div class="textosPA">
-            <p>Estudantes e escolas, especialmente jovens interessados em soluções de tecnologia social e prevenção de desastres.</p>
+            <p>Voluntários e grupos de apoio que auxiliam na prevenção e resgate durante enchentes.</p>
           </div>
         </div>
       </div>
-    </section>
+    </section>    
 
     <section id="entreEmContato">
       <div class="txtEntreEmContato">
         <h2>Entre em contato</h2>
         <div class="linha"></div>
-        <p>O formulário foi criado para estreitar a comunicação entre a população e os responsáveis pelas ações preventivas e emergenciais. Através dele, conseguimos identificar regiões de risco, avaliar o nível de conscientização da população e oferecer orientações personalizadas. Além disso, os dados coletados podem ser compartilhados com autoridades civis e projetos sociais, auxiliando em ações rápidas e assertivas em casos de enchentes.</p>
+        <p>Este formulário conecta a população aos responsáveis por ações preventivas e emergenciais, permitindo identificar áreas de risco e oferecer orientações personalizadas.</p>
+        <p>Os dados ajudam autoridades e projetos sociais a agir rapidamente em casos de enchentes.Ao enviar suas informações, você contribui para um sistema mais inteligente e eficaz no combate a desastres naturais.</p>
 
-        <p>Ao preencher o formulário, você estará contribuindo para um sistema mais inteligente, humano e eficaz no enfrentamento de desastres naturais.</p>
+
       </div>
       <div class="formulario">
         <form action="">
           <div class="inputs">
-            <input type="text" name="nome" placeholder="Nome completo:">
-            <input type="text" name="idade" placeholder="Idade:">
-            <input type="text" name="CEP" placeholder="CEP/localização atual:">
-            <input type="email" name="e-mail" placeholder="Contato para emergencias(telefone ou e-mail):">
+            <input type="text" id="nome" name="nome" placeholder="Nome completo:">
+            <input type="text" id="idade" name="idade" placeholder="Idade:">
+            <input type="text" id="cep" name="CEP" placeholder="CEP/localização atual:">
+            <input type="email" id="email" name="e-mail" placeholder="Contato para emergencias(e-mail):">
             <textarea name="observacoes" placeholder="Observações ou sugestões:"></textarea>
           </div>
 
@@ -266,52 +267,59 @@
               <option value="nãoEnchentes">Nunca</option>
             </select>
           </div>
-          <button type="submit">Enviar</button>
+          <div class="msg"></div>
+          <button type="submit" id="submit">Enviar</button>
         </form>
       </div>
     </section>
 
-    <section id="anexo">
-      <h2>Você Está Preparado?</h2>
-      <div class="linha"></div>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fsthkr9Y0D8?si=EnEZ6aNDiqx8IniV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Agora que você assistiu ao vídeo, é hora de testar seus conhecimentos! O quiz a seguir foi elaborado com base nas orientações apresentadas e tem como proposta concretizar o que foi aprendido, além de contribuir para sua preparação em casos reais de enchente. Responda com atenção e veja se você está pronto(a) para agir com segurança diante desse tipo de emergência.</p>
-      <a href="./quiz.html">Começar</a>
-    </section>
+    <div class="container-gradient">
+      <section id="anexo">
+        <h2>Você Está Preparado?</h2>
+        <div class="linha"></div>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fsthkr9Y0D8?si=EnEZ6aNDiqx8IniV&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Agora que assistiu ao vídeo, teste seus conhecimentos!
+          O quiz a seguir reforça o que foi aprendido e ajuda na sua preparação para agir com segurança em situações de enchente. Responda com atenção!</p>
+        <a href="./quiz.html">Começar</a>
+      </section>
 
-    <section id="footer">
-      <footer>
-        <div class="linhaFooter"></div>
-        <div class="testosFooter">
-          <div class="sobreNosFooter">
-            <h4>SOBRE NÓS</h4>
-            <div class="linha"></div>
-            <p>Sobre nós</p>
-            <p>Privacidade</p>
-            <p>Contato</p>
-          </div>
+      <section id="footer">
+        <footer>
+          <div class="linhaFooter"></div>
+          <div class="testosFooter">
+            <div class="sobreNosFooter">
+              <h4>SOBRE NÓS</h4>
+              <div class="linha"></div>
+              <p>Sobre nós</p>
+              <p>Privacidade</p>
+              <p>Contato</p>
+            </div>
 
-          <div class="clientesFooter">
-            <h4>Duvidas</h4>
-            <div class="linha"></div>
-            <p>FAQ</p>
-            <p>Mais informações</p>
-            <p>Duvidas frequentes</p>
-          </div>
+            <div class="clientesFooter">
+              <h4>Duvidas</h4>
+              <div class="linha"></div>
+              <p>FAQ</p>
+              <p>Mais informações</p>
+              <p>Duvidas frequentes</p>
+            </div>
 
-          <div class="clientesFooter">
-            <h4>Contato</h4>
-            <div class="linha"></div>
-            <p>Av. Paulista, nº 1000</p>
-            <p>São Paulo, Brazil</p>
-            <p>inventado@gmail.com</p>
+            <div class="clientesFooter">
+              <h4>Contato</h4>
+              <div class="linha"></div>
+              <p>Av. Paulista, nº 1000</p>
+              <p>São Paulo, Brazil</p>
+              <p>inventado@gmail.com</p>
+            </div>
           </div>
-        </div>
-        <div class="footer"></div>
-      </footer>
+          <div class="footer"></div>
+        </footer>
+      </div>
     </section>
   </main>
   <script src="./assets/scripts/mode.js"></script>
   <script src="./assets/scripts/slider.js"></script>
+  <script src="./assets/scripts/mobile-navbar.js"></script>
+  <script src="./assets/scripts/alerts.js"></script>
+  <script src="./assets/scripts/formulario.js"></script>
 </body>
 </html>
