@@ -1,3 +1,7 @@
+p,h1,h2,h3,h4,h5{
+  color:var(--white);
+}
+
 footer{
   margin-top: 30px;
   display: flex;
@@ -13,7 +17,7 @@ footer{
 
 .linhaFooter{
   width: 90%;
-  border-top: 1px solid var(--detalhes );
+  border-top: 1px solid var(--detalhes);
   padding-top: 2rem;
 }
 
@@ -256,7 +260,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 11px;
-  h4{font: --paragrafo1Bold} /*ajuda*/
+  h4{font: --paragrafo1Bold}
 }
 
 .containerTecnologias img{
@@ -461,9 +465,6 @@ footer{
 }
 
 .anexo, footer {
-  background-color: linear-gradient(to bottom, red(0, 0, 0, 0) 70%, red 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, red 100%);
 }
 
-p,h1,h2,h3,h4,h5{
-  color:var(--white);
-}
