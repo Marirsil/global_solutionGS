@@ -13,7 +13,7 @@ footer{
 
 .linhaFooter{
   width: 90%;
-  border-top: 1px solid var(--detalhes);
+  border-top: 1px solid var(--detalhes );
   padding-top: 2rem;
 }
 
@@ -170,10 +170,11 @@ footer{
     color: var(--white);
   }
   a{
+    color: var(--txtbuttonaparte);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--txtPaginaInicial);
+    background-color: var(--buttonaparte);
     width: 174px;
     height: 46px;
     border-radius: 40px;
@@ -357,12 +358,12 @@ footer{
   form button{
     width: 335px;
     height: 42.91px;
-    background-color: var(--detalhes);
+    background-color: var(--buttonaparte);
     border-radius: 30px;
     border: none;
     margin-top: 30px;
     font: var(--btnEnviar);
-    color: var(--textColor70);
+    color: var(--txtbuttonaparte);
   }
 
   .select{
@@ -372,17 +373,17 @@ footer{
     display: flex;
     select{
       appearance: none; 
-      background-color: var(--detalhes);
+      background-color: var(--buttonaparte);
       border: none;
       width: 94px;
       height: 20px;
-      color: var(--textColor70);
+      color: var(--txtbuttonaparte);
       border-radius: 5px;
       text-align-last: center;
       margin-bottom: 10px;
     }
     .label{
-      color: var(--textColor70);;
+      color: var(--buttonaparte);;
       font: var(--h5);
       margin-bottom: 10px;
     }
@@ -401,7 +402,7 @@ footer{
   input, textarea{
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid var(--textColor40);
+    border-bottom: 1px solid var(--detalhes);
     line-height: 1.6rem;
     height: 20px;
   }
